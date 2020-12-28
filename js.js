@@ -21,7 +21,7 @@ generateEl.addEventListener('click', () => {
   const hasNum = numbersEl.checked;
   const hasSym = symbolsEl.checked;
 
-  resultEl.innerText = genPass(hasLow, hasUpp, hasNum, hasSym, length);
+  resultEl.innerText = genPass(hasLow, hasUpp, hasNum, hasSym, length) || '';
 });
 
 clipboard.addEventListener('click', () => {
